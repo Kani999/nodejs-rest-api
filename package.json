@@ -1,0 +1,26 @@
+{
+  "name": "todo-list-api",
+  "version": "1.0.0",
+  "description": "Simple REST API for todo-list application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kani999/nodejs-rest-api.git"
+  },
+  "keywords": [
+    "REST",
+    "API",
+    "nodejs",
+    "centos7",
+    "mariadb"
+  ],
+  "author": "Jan Krupa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kani999/nodejs-rest-api/issues"
+  },
+  "homepage": "https://github.com/Kani999/nodejs-rest-api#readme"
+}
