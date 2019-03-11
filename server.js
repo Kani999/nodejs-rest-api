@@ -1,14 +1,14 @@
+// load .env file
 require('dotenv').config()
 
-var express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000;
+const http = require("http");
+const app = require('./app');
+ 
+//Use system configuration for port 
+const port = process.env.PORT;
+ 
+//Create server with exported express app
+const server = http.createServer(app);
+server.listen(port);
 
-// curl 127.0.0.1:3000
-app.get('/', function (req, res) {
-   res.send(process.env.DB_HOST + ' ' + process.env.DB_USER);
-})
-
-app.listen(port);
-
-console.log('To-Do list RESTful API server started on: ' + port);
+console.log('To-Do list RESTful API server started');
